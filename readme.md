@@ -11,10 +11,11 @@
 ## Mobile Layout
 ![](./layouts/alurinha-layout-mobile.png)
 
-</div>
 <br><br>
 
 ## References
+
+</div>
 
 - [CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Flexbox-Mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
