@@ -13,11 +13,11 @@
   line-height: 75px;
   font-size: 30px;
 } */
- 
- /* img {width:180%;
+
+/* img {width:180%;
       height:auto;
      border:2px outset #abc;}  */
- 
+
 .header .container {
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@
 .rodapePrincipal-patrocinadores-list {
   display: flex;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: space-around;
   width: 70%;
   margin-right: 5%;
 }
@@ -47,16 +47,18 @@
 }
 
 .rodapePrincipal-contatoForm-fieldset {
-  display: flex; /* o botao fica do mesmo tamanho que a do field  */
+  display: flex;
+  /* o botao fica do mesmo tamanho que a do field  */
 }
 
 .rodapePrincipal-navMap-list {
   display: flex;
   /* flex-direction: column; Transforma o display flex q estava inline para coluna 
   flex-wrap: wrap; fatia a coluna a cada 250px e coloca inline */
-  flex-flow: column wrap; /* flex-flow substitui as duas linhas de cima*/
+  flex-flow: column wrap;
+  /* flex-flow substitui as duas linhas de cima*/
   height: 250px;
-  
+
 }
 
 .footer-contact .container {
@@ -68,7 +70,8 @@
 .conteudoPrincipal-cursos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start; /* conteudo para esquerda */
+  justify-content: start;
+  /* conteudo para esquerda */
 }
 
 .conteudoPrincipal-cursos-link {
@@ -76,10 +79,60 @@
   margin: 1%;
 }
 
-.conteudoPrincipal-cursos-link:nth-child(4n) { /* para pegar o elemento multiplo de 4, fazer ajuste com nth-child(4n) */
-  margin-right: 0; 
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+  /* para pegar o elemento multiplo de 4, fazer ajuste com nth-child(4n) */
+  margin-right: 0;
 }
 
-.conteudoPrincipal-cursos-link:nth-child(4n+1) { /* valor n = 0 | (4*0_)+1 = 1  e seguida multiple de 5 | mas começa no elemnto 1 */
-  margin-left: 0; 
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+  /* valor n = 0 | (4*0_)+1 = 1  e seguida multiple de 5 | mas começa no elemnto 1 */
+  margin-left: 0;
+}
+
+/* MOBILE LAYOUT */
+@media(max-width: 768px) {
+  .header-nav {
+    flex-direction: column;
+  }
+
+  .header .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+  }
+
+  .conteudoPrincipal-cursos {
+    flex-direction: column;
+  }
+
+  .conteudoPrincipal-cursos-link {
+    width: 100%;
+  }
+
+  .rodapePrincipal-navMap-list {
+    height: auto;
+  }
+
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    margin: 0;
+    width: 100%;
+  }
+
+  .rodapePrincipal-contatoForm {
+    width: 100%;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
+
+  .header-nav-link-app {
+    order: -1; /* order pode mudar a ordem dentro do display flex dos itens */
+  }
+
 }
