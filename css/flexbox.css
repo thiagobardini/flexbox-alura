@@ -1,0 +1,85 @@
+/* .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgba(100,0,200,.15);
+  border:4px groove #abc;
+ 
+}
+.flex-container > div {
+  background-color: ;
+  width: 26%;
+  margin: 3.5%;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+} */
+ 
+ /* img {width:180%;
+      height:auto;
+     border:2px outset #abc;}  */
+ 
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  width: 70%;
+  margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+  width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex; /* o botao fica do mesmo tamanho que a do field  */
+}
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+  /* flex-direction: column; Transforma o display flex q estava inline para coluna 
+  flex-wrap: wrap; fatia a coluna a cada 250px e coloca inline */
+  flex-flow: column wrap; /* flex-flow substitui as duas linhas de cima*/
+  height: 250px;
+  
+}
+
+.footer-contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start; /* conteudo para esquerda */
+}
+
+.conteudoPrincipal-cursos-link {
+  width: 23%;
+  margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) { /* para pegar o elemento multiplo de 4, fazer ajuste com nth-child(4n) */
+  margin-right: 0; 
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) { /* valor n = 0 | (4*0_)+1 = 1  e seguida multiple de 5 | mas começa no elemnto 1 */
+  margin-left: 0; 
+}
