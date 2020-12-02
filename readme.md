@@ -12,6 +12,7 @@
 ![](./layouts/alurinha-layout-mobile.png)
 
 </div>
+<br><br>
 
 ## References
 
