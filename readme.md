@@ -4,6 +4,11 @@
 
 # Flexbox: Element Position 
 
+## Desktop Layout
+![](./layouts/alurinha-layout-desktop.png)
+## Mobile Layout
+![](./layouts/alurinha-layout-mobile.png)
+
 ### References
 
 - [CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
