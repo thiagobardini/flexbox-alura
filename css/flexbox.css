@@ -131,6 +131,7 @@
     justify-content: center;
   }
 
+  /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
   .header-nav-link-app {
     order: -1; /* order pode mudar a ordem dentro do display flex dos itens */
   }
